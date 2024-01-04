@@ -53,8 +53,8 @@ export default function Form() {
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">10.Type of House  Ownership ?</label>
       <select class="w-1/2" {...register("10.Type of House  Ownership ?", { required: true })}>
-       <option value="general">Self Owned</option>
-            <option value="obc">Rent </option>
+       <option value="Self owned">Self Owned</option>
+            <option value="Rent">Rent </option>
             <option value="Unauthorized">Unauthorized</option>
       </select>
       </div>
