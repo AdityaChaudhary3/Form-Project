@@ -8,14 +8,16 @@ export default function Form() {
   const { globalObject, setGlobalObject } = useMyContext();
   const onSubmit = data =>{
     setGlobalObject(data)
+    console.log("data",data);
+    console.log("global",globalObject);
     navigate("/result")
   } ;
-  console.log(globalObject);
+  
   return (
-    <form onSubmit={handleSubmit(onSubmit)} class="bg-gray-200 p-4 flex flex-col justify-center items-center"> 
+    <form onSubmit={handleSubmit(onSubmit)} className="bg-gray-200 p-4 flex flex-col justify-center items-center"> 
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">1. What is the Name of Block</label>
-      <input class="w-1/2 h-2/3 p-3" type="text" placeholder="What is Name of Block ?" {...register("What is Name of Block ?", {required: true})} />
+      <input class="w-1/2 h-2/3 p-3" type="text" placeholder="What is Name of Block ?" {...register("1.What is Name of Block ?", {required: true})} />
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">2.What is Name of Gram Panchayat.</label>
@@ -39,7 +41,7 @@ export default function Form() {
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">8.What is the category of the Familly ? (SC/ST/OBC/General)"</label>
-      <select class="w-1/2" {...register("What is the category of the Familly ? (SC/ST/OBC/General)", { required: true })}>
+      <select class="w-1/2" {...register("8.What is the category of the Familly ? (SC/ST/OBC/General)", { required: true })}>
       <option value="sc">SC</option>
        <option value="general">ST</option>
             <option value="obc">OBC</option>
@@ -52,7 +54,7 @@ export default function Form() {
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">10.Type of House  Ownership ?</label>
-      <select class="w-1/2" {...register("Type of House  Ownership ?", { required: true })}>
+      <select class="w-1/2" {...register("10.Type of House  Ownership ?", { required: true })}>
        <option value="general">Self Owned</option>
             <option value="obc">Rent </option>
             <option value="Unauthorized">Unauthorized</option>
@@ -60,7 +62,7 @@ export default function Form() {
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">11.Religion of the family?</label>
-      <select class="w-1/2" {...register("Religion of the family?", { required: true })}>
+      <select class="w-1/2" {...register("11.Religion of the family?", { required: true })}>
       <option value="Hinduism">Hinduism</option>
        <option value="Muslim">Muslim</option>
             <option value="Christianity">Christianity </option>
@@ -68,14 +70,14 @@ export default function Form() {
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">12.Do the Familly have MGNREGA Job Card ?</label>
-      <select class="w-1/2" {...register("Do the Familly have MGNREGA Job Card", { required: true })}>
+      <select class="w-1/2" {...register("12.Do the Familly have MGNREGA Job Card", { required: true })}>
       <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">13.Type of house</label>
-      <select class="w-1/2" {...register("Type of house ?", { required: true })}>
+      <select class="w-1/2" {...register("13.Type of house ?", { required: true })}>
       <option value="Kaccha">Kaccha</option>
        <option value="Pucca">Pucca</option>
        <option value="Half Pucca">Half Pucca</option>
@@ -83,77 +85,77 @@ export default function Form() {
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">14.Do the Familly have electricity connection </label>
-      <select class="w-1/2" {...register("Do the Familly have electricity connection ?", { required: true })}>
+      <select class="w-1/2" {...register("14.Do the Familly have electricity connection ?", { required: true })}>
       <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">15. Do the Familly have Gas Connection ?</label>
-      <select class="w-1/2" {...register("Do the Familly have Gas Connection ?", { required: true })}>
+      <select class="w-1/2" {...register("15.Do the Familly have Gas Connection ?", { required: true })}>
       <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">16.Do the Familly benefited through Ujjwala Scheme ? ?</label>
-      <select class="w-1/2" {...register("Do the Familly benefited through Ujjwala Scheme ?", { required: true })}>
+      <select class="w-1/2" {...register("16.Do the Familly benefited through Ujjwala Scheme ?", { required: true })}>
        <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">17.Do the Familly have Individual toilets ?</label>
-      <select class="w-1/2" {...register("Do the Familly have Individual toilets ?", { required: true })}>
+      <select class="w-1/2" {...register("17.Do the Familly have Individual toilets ?", { required: true })}>
        <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">18.Whether received Awas under PMAY/CMAY?</label>
-      <select class="w-1/2" {...register("Whether received Awas under PMAY/CMAY?", { required: true })}>
+      <select class="w-1/2" {...register("18.Whether received Awas under PMAY/CMAY?", { required: true })}>
        <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">19.Familly have taken loan under any scheme ?</label>
-      <select class="w-1/2" {...register("Familly have taken loan under any scheme?", { required: true })}>
+      <select class="w-1/2" {...register("19.Familly have taken loan under any scheme?", { required: true })}>
        <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">20.Does the Familly covered under Fasal Bima Yojana ?</label>
-      <select class="w-1/2" {...register("Does the Familly covered under Fasal Bima Yojana?", { required: true })}>
+      <select class="w-1/2" {...register("20.Does the Familly covered under Fasal Bima Yojana?", { required: true })}>
        <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">21.Familly got connection under Har Ghar Jal Jal Jeevan Mission ?</label>
-      <select class="w-1/2" {...register("Familly got connection under Har Ghar Jal Jal Jeevan Mission?", { required: true })}>
+      <select class="w-1/2" {...register("21.Familly got connection under Har Ghar Jal Jal Jeevan Mission?", { required: true })}>
        <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">22.Whether Familly got benefitted from CM Vivah Yojana ?</label>
-      <select class="w-1/2" {...register("Whether Familly got benefitted from CM Vivah Yojana ?", { required: true })}>
+      <select class="w-1/2" {...register("22.Whether Familly got benefitted from CM Vivah Yojana ?", { required: true })}>
        <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">23. Familly got connection under Har Ghar Jal ?</label>
-      <select class="w-1/2" {...register("Familly got connection under Har Ghar Jal ?", { required: true })}>
+      <select class="w-1/2" {...register("23.Familly got connection under Har Ghar Jal ?", { required: true })}>
        <option value="Yes">Yes</option>
        <option value="No">No</option>
       </select>
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">24. Main Occupation of the Familly ?</label>
-      <select class="w-1/2" {...register("Familly got connection under Har Ghar Jal ?", { required: true })}>
+      <select class="w-1/2" {...register("24.Familly got connection under Har Ghar Jal ?", { required: true })}>
        <option value="Yes">Government Job</option>
        <option value="No">Private Job</option>
        <option value="Yes">Agriculture</option>

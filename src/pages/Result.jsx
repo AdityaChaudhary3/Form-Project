@@ -5,13 +5,13 @@ const Result=()=>{
       <>
     <div>
       <h2>Object Keys and Values:</h2>
-      <ul>
+      {/* <ul>
         {Object.entries(globalObject).map(([key, value]) => (
           <li key={key}>
             <strong>{key}:</strong> {value}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
       </>
     )
