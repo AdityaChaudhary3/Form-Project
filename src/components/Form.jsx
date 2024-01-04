@@ -7,12 +7,10 @@ export default function Form() {
   const navigate=useNavigate();
   const { globalObject, setGlobalObject } = useMyContext();
   const onSubmit = data =>{
-    setGlobalObject(data)
+    setGlobalObject([...globalObject,data]);
     console.log("data",data);
-    console.log("global",globalObject);
     navigate("/result")
   } ;
-  
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="bg-gray-200 p-4 flex flex-col justify-center items-center"> 
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">

@@ -5,8 +5,8 @@ const MyContext = createContext();
 
 // Create a provider component that will wrap your app
 export const MyContextProvider = ({ children }) => {
-  const [globalObject, setGlobalObject] = useState({});
-
+  const [globalObject, setGlobalObject] = useState([]);
+   
   return (
     <MyContext.Provider value={{ globalObject, setGlobalObject }}>
       {children}
