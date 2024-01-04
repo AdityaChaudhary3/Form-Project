@@ -10,12 +10,12 @@ export default function FormSecond() {
     <form onSubmit={handleSubmit(onSubmit)} className="bg-gray-200 p-4 flex flex-col justify-center items-center">
       <div className="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label className="w-1/2">1.Family Members Name ?</label>
-      <input type="text" placeholder="1.Family Members Name ?" {...register} />
+      <input className="w-1/2 h-2/3 p-3" type="text" placeholder="1.Family Members Name ?" {...register("1.Family Members Name ?", {})} />
       </div>
 
       <div className="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label className="w-1/2">2.Family Members Age ?</label>
-      <input className="w-1/2 h-2/3 p-3" type="text" placeholder="2.Family Members Age ?" {...register} />
+      <input className="w-1/2 h-2/3 p-3" type="text" placeholder="2.Family Members Age ?" {...register("2.Family Members Age ?", {})} />
       </div>
 
       <div className="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
