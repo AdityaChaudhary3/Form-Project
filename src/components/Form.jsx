@@ -162,7 +162,7 @@ export default function Form() {
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">25.How many members in the Familly ?</label>
-      <input class="w-1/2" {...register("25.How many members in the Familly ?", { required: true, min: 1, max: 8 })} type="number"/>
+      <input class="w-1/2" {...register("25.How many members in the Familly ?", { required: true })} type="number"/>
       </div>
       <input class="w-1/2 curser " type="submit" />
       </form>
