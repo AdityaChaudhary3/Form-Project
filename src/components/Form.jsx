@@ -9,7 +9,7 @@ export default function Form() {
   const onSubmit = data =>{
     setGlobalObject([...globalObject,data]);
     console.log("data",data);
-    navigate("/result")
+    navigate("/secondform")
   } ;
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="bg-gray-200 p-4 flex flex-col justify-center items-center"> 
@@ -48,12 +48,12 @@ export default function Form() {
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">9.How much land the Familly Owns ? (In Bigha)"</label>
-      <input class="w-1/2" type="text" placeholder="How much land the Familly Owns ? (In Bigha)" {...register("9.How much land the Familly Owns ? (In Bigha)", {required: true})} />
+      <input class="w-1/2" type="number" placeholder="How much land the Familly Owns ? (In Bigha)" {...register("9.How much land the Familly Owns ? (In Bigha)", {required: true})} />
       </div>
       <div class="bg-white mb-4 w-4/5 h-10 flex items-center justify-around">
       <label class="w-1/2">10.Type of House  Ownership ?</label>
       <select class="w-1/2" {...register("10.Type of House  Ownership ?", { required: true })}>
-       <option value="Self owned">Self Owned</option>
+            <option value="Self owned">Self Owned</option>
             <option value="Rent">Rent </option>
             <option value="Unauthorized">Unauthorized</option>
       </select>
