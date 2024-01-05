@@ -9,7 +9,7 @@ import SecondForm from './pages/SecondForm'
 function App() {
   return (
     <BrowserRouter>
-      <h1>Surevy App</h1>
+      <h1 className='font-bold'>Surevy App</h1>
       <Routes>
         <Route path="/" element={ <Form />} />
         <Route path="/result" element={ <Result />} />

@@ -5,12 +5,12 @@ const Result=()=>{
     return (
     <div>
             {globalObject.map((result, index) => (
-                <div key={index} class="flex flex-col">
+                <div key={index} className="flex flex-col">
                     {Object.entries(result).map(([key, nestedObject]) => (
-                        <div key={key} class="mb-2">
+                        <div key={key} className="mb-2">
                             {Object.entries(nestedObject).map(([question, answer]) => (
-                                <div key={question} class="flex flex-row justify-center bg-gray">
-                                   <div class="mr-6">{question} </div>
+                                <div key={question} className="flex flex-row justify-center bg-gray">
+                                   <div className="mr-6">{question} </div>
                                    <div>{answer}</div>
                                 </div>
                             ))}
