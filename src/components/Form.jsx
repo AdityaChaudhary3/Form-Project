@@ -163,7 +163,7 @@ export default function Form() {
       </div>
       <div className="bg-white w-full rounded-lg h-auto p-3 mb-4  flex items-center justify-around">
       <label className="w-1/2">25.How many members in the Familly ?</label>
-      <input className="w-1/2 p-3"  {...register("25.How many members in the Familly ?", { required: true })} type="number"/>
+      <input className="w-1/2 p-3"  {...register("25.How many members in the Familly ?", { required: true, min:1, max:8 })} type="number"/>
       </div>
       <input className="w-1/2 p-3 rounded-lg  border border-black cursor-pointer " type="submit" />
       </form>

@@ -1,23 +1,22 @@
 import { useMyContext } from "../Context/Mycontext"
+import ResultComponent from "../components/ResultComponents";
 const Result=()=>{
     const { globalObject} = useMyContext();
-    console.log(globalObject);
+    const GenralData=globalObject[globalObject.length-1]
+    console.log(GenralData);
+    const familymembersData=globalObject[globalObject.length-1][26];
+    console.log(familymembersData);
     return (
-    <div>
-            {globalObject.map((result, index) => (
-                <div key={index} className="flex flex-col">
-                    {Object.entries(result).map(([key, nestedObject]) => (
-                        <div key={key} className="mb-2">
-                            {Object.entries(nestedObject).map(([question, answer]) => (
-                                <div key={question} className="flex flex-row justify-center bg-gray">
-                                   <div className="mr-6">{question} </div>
-                                   <div>{answer}</div>
-                                </div>
-                            ))}
-                        </div>
-                    ))}
-                </div>
-            ))}
+        <div className="flex flex-col">
+            <div className="font-bold">Genral Data</div>
+             <ResultComponent  Data={GenralData} />
+             <div className="font-bold mt-5">Family Members Data</div>
+             {familymembersData.map((Data,index)=>(
+                <>
+                <div className='mt-6 font-bold'> {index+1} family member data</div>
+                <ResultComponent Data={Data} />
+                </>
+             ))}
         </div>
     )
 }

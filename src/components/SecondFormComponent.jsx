@@ -4,12 +4,10 @@ import { useMyContext } from '../Context/Mycontext';
 export default function FormSecond() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const {globalObject,setGlobalObject}=useMyContext();
-  const onSubmit = data =>{
-    console.log(data);
+  const onSubmit = (data) =>{
     globalObject[globalObject.length-1][26].push(data);
     console.log(globalObject);
   }
-  console.log(errors);
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="bg-gray-200 p-4 flex flex-col justify-center items-center">
       <div className="bg-white mb-4 w-full h-auto p-3 rounded-lg flex items-center justify-around">
