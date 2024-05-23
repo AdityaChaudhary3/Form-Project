@@ -9,7 +9,7 @@ import SecondForm from './pages/SecondForm'
 function App() {
   return (
     <BrowserRouter>
-      <h1 className='font-bold'>Survey App</h1>
+      <h1 className='survey-app-header'>Survey App</h1>
       <Routes>
         <Route path="/" element={ <Form />} />
         <Route path="/result" element={ <Result />} />

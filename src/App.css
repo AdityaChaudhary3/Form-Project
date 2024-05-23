@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: linear-gradient(to bottom left, #f9fafc, #d7ecfd, #f9fafc, #f6e8f5, #f9fafc, #ecf0fc, #f9fafc);
 }
 
 .logo {
@@ -39,4 +40,18 @@
 
 .read-the-docs {
   color: #888;
+}
+.survey-app-header{
+  font-size: 36px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #226bff, #4aaeff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    overflow: hidden;
+}
+@media screen and (max-width:650px){
+  #root{
+    padding: 1rem;
+  }
 }
