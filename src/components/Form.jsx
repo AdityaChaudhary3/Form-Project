@@ -42,7 +42,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">8.What is the category of the Familly ? (SC/ST/OBC/General)"</label>
         <select className="w-full md:w-1/2" {...register("8.What is the category of the Familly ? (SC/ST/OBC/General)", { required: true })}>
-          <option value="">Select category</option>
+          <option value="" disabled>Select category</option>
           <option value="sc">SC</option>
           <option value="general">ST</option>
           <option value="obc">OBC</option>
@@ -56,7 +56,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">10.Type of House  Ownership ?</label>
         <select className="w-full md:w-1/2" {...register("10.Type of House  Ownership ?", { required: true })}>
-          <option value="">Select Type</option>
+          <option value="" disabled>Select Type</option>
           <option value="Self owned">Self Owned</option>
           <option value="Rent">Rent </option>
           <option value="Unauthorized">Unauthorized</option>
@@ -65,7 +65,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">11.Religion of the family?</label>
         <select className="w-full md:w-1/2" {...register("11.Religion of the family?", { required: true })}>
-          <select value="">Select Religion</select>
+          <option value="" disabled>Select Religion</option>
           <option value="Hinduism">Hinduism</option>
           <option value="Muslim">Muslim</option>
           <option value="Christianity">Christianity </option>
@@ -74,7 +74,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">12.Do the Familly have MGNREGA Job Card ?</label>
         <select className="w-full md:w-1/2" {...register("12.Do the Familly have MGNREGA Job Card", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -82,7 +82,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">13.Type of house</label>
         <select className="w-full md:w-1/2" {...register("13.Type of house ?", { required: true })}>
-          <option value="">Select type of house</option>
+          <option value="" disabled>Select type of house</option>
           <option value="Kaccha">Kaccha</option>
           <option value="Pucca">Pucca</option>
           <option value="Half Pucca">Half Pucca</option>
@@ -91,7 +91,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">14.Do the Familly have electricity connection </label>
         <select className="w-full md:w-1/2" {...register("14.Do the Familly have electricity connection ?", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -99,7 +99,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">15. Do the Familly have Gas Connection ?</label>
         <select className="w-full md:w-1/2" {...register("15.Do the Familly have Gas Connection ?", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -107,7 +107,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">16.Do the Familly benefited through Ujjwala Scheme ? ?</label>
         <select className="w-full md:w-1/2" {...register("16.Do the Familly benefited through Ujjwala Scheme ?", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -115,7 +115,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">17.Do the Familly have Individual toilets ?</label>
         <select className="w-full md:w-1/2" {...register("17.Do the Familly have Individual toilets ?", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -123,7 +123,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">18.Whether received Awas under PMAY/CMAY?</label>
         <select className="w-full md:w-1/2" {...register("18.Whether received Awas under PMAY/CMAY?", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -131,7 +131,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">19.Familly have taken loan under any scheme ?</label>
         <select className="w-full md:w-1/2" {...register("19.Familly have taken loan under any scheme?", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -139,7 +139,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">20.Does the Familly covered under Fasal Bima Yojana ?</label>
         <select className="w-full md:w-1/2" {...register("20.Does the Familly covered under Fasal Bima Yojana?", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -147,7 +147,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">21.Familly got connection under Har Ghar Jal Jal Jeevan Mission ?</label>
         <select className="w-full md:w-1/2" {...register("21.Familly got connection under Har Ghar Jal Jal Jeevan Mission?", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -155,7 +155,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">22.Whether Familly got benefitted from CM Vivah Yojana ?</label>
         <select className="w-full md:w-1/2" {...register("22.Whether Familly got benefitted from CM Vivah Yojana ?", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -163,7 +163,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">23. Familly got connection under Har Ghar Jal ?</label>
         <select className="w-full md:w-1/2" {...register("23.Familly got connection under Har Ghar Jal ?", { required: true })}>
-          <option value="">Select Yes or No</option>
+          <option value="" disabled>Select Yes or No</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -171,7 +171,7 @@ export default function Form() {
       <div className=" w-full rounded-lg h-auto p-3 mb-4  flex flex-col md:flex-row items-center justify-around">
         <label className="pr-10 md:w-1/2 w-full mb-6 md:mb-2">24. Main Occupation of the Familly ?</label>
         <select className="w-full md:w-1/2" {...register("24.Familly got connection under Har Ghar Jal ?", { required: true })}>
-          <option value="">Select Main Occupation</option>
+          <option value="" disabled>Select Main Occupation</option>
           <option value="Yes">Government Job</option>
           <option value="No">Private Job</option>
           <option value="Yes">Agriculture</option>
