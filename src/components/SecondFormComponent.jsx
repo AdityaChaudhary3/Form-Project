@@ -52,7 +52,7 @@ export default function FormSecond() {
       <div className="mb-4 w-full h-auto p-3 rounded-lg flex flex-col md:flex-row items-center justify-around">
         <label className="w-full md:w-1/2 mb-6 md:mb-0">8. Shram card scheme</label>
         <select className="w-full md:w-1/2" {...register("8.Shram card scheme", { required: true })}>
-          <option value="" disabled>Select</option>
+          <option value="" hidden>Select</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -61,7 +61,7 @@ export default function FormSecond() {
       <div className="mb-4 w-full h-auto p-3 rounded-lg flex flex-col md:flex-row items-center justify-around">
         <label className="w-full md:w-1/2 mb-6 md:mb-0">9. Pension scheme</label>
         <select className="w-full md:w-1/2" {...register("9.Pension scheme", { required: true })}>
-          <option value="" disabled>Select</option>
+          <option value="" hidden>Select</option>
           <option value="Vriddha pension">Vriddha pension</option>
           <option value="Nirashrit Mahila pension">Nirashrit Mahila pension</option>
           <option value="Divyang pension">Divyang pension</option>
@@ -71,7 +71,7 @@ export default function FormSecond() {
       <div className="mb-4 w-full h-auto p-3 rounded-lg flex flex-col md:flex-row items-center justify-around">
         <label className="w-full md:w-1/2 mb-6 md:mb-0">10. Divyang Equipment</label>
         <select className="w-full md:w-1/2" {...register("10.Divyang Equipment", { required: true })}>
-          <option value="" disabled>Select</option>
+          <option value="" hidden>Select</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -80,7 +80,7 @@ export default function FormSecond() {
       <div className="mb-4 w-full h-auto p-3 rounded-lg flex flex-col md:flex-row items-center justify-around">
         <label className="w-full md:w-1/2 mb-6 md:mb-0">11. Any woman in the family should be associated with self help group</label>
         <select className="w-full md:w-1/2" {...register("11.Any woman in the family should be associated with self help group", { required: true })}>
-          <option value="" disabled>Select</option>
+          <option value="" hidden>Select</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -89,7 +89,7 @@ export default function FormSecond() {
       <div className="mb-4 w-full h-auto p-3 rounded-lg flex flex-col md:flex-row items-center justify-around">
         <label className="w-full md:w-1/2 mb-6 md:mb-0">12. Ayushman card scheme</label>
         <select className="w-full md:w-1/2" {...register("12.Ayushman card scheme", { required: true })}>
-          <option value="" disabled>Select</option>
+          <option value="" hidden>Select</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -98,7 +98,7 @@ export default function FormSecond() {
       <div className="mb-4 w-full h-auto p-3 rounded-lg flex flex-col md:flex-row items-center justify-around">
         <label className="w-full md:w-1/2 mb-6 md:mb-0">13. PMJY</label>
         <select className="w-full md:w-1/2" {...register("13.PMJY", { required: true })}>
-          <option value="" disabled>Select</option>
+          <option value="" hidden>Select</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -107,7 +107,7 @@ export default function FormSecond() {
       <div className="mb-4 w-full h-auto p-3 rounded-lg flex flex-col md:flex-row items-center justify-around">
         <label className="w-full md:w-1/2 mb-6 md:mb-0">14. PMJJBY</label>
         <select className="w-full md:w-1/2" {...register("14.PMJJBY", { required: true })}>
-          <option value="" disabled>Select</option>
+          <option value="" hidden>Select</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -116,7 +116,7 @@ export default function FormSecond() {
       <div className="mb-4 w-full h-auto p-3 rounded-lg flex flex-col md:flex-row items-center justify-around">
         <label className="w-full md:w-1/2 mb-6 md:mb-0">15. PMBY</label>
         <select className="w-full md:w-1/2" {...register("15.PMBY", { required: true })}>
-          <option value="" disabled>Select</option>
+          <option value="" hidden>Select</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -125,7 +125,7 @@ export default function FormSecond() {
       <div className="mb-4 w-full h-auto p-3 rounded-lg flex flex-col md:flex-row items-center justify-around">
         <label className="w-full md:w-1/2 mb-6 md:mb-0">16. APY</label>
         <select className="w-full md:w-1/2" {...register("16.APY", { required: true })}>
-          <option value="" disabled>Select</option>
+          <option value="" hidden>Select</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -134,7 +134,7 @@ export default function FormSecond() {
       <div className="mb-4 w-full h-auto p-3 rounded-lg flex flex-col md:flex-row items-center justify-around">
         <label className="w-full md:w-1/2 mb-6 md:mb-0">17. Kaushal vikas scheme</label>
         <select className="w-full md:w-1/2" {...register("17.Kaushal vikas scheme", { required: true })}>
-          <option value="" disabled>Select</option>
+          <option value="" hidden>Select</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
